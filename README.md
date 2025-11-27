@@ -137,24 +137,20 @@ What it does: Automatically increments the total_check_ins column in the members
 Where it's defined: app/triggers.sql.
 How it's applied: The trigger SQL is executed automatically on application startup via the startup_event in app/main.py.
 
-📁 Project Structure
-service-membership-api/
-├── app/
-│   ├── __init__.py
-│   ├── database.py         # Database session and engine
-│   ├── main.py             # FastAPI app and startup logic
-│   ├── models.py           # SQLAlchemy ORM models
-│   ├── schemas.py          # Pydantic models for validation
-│   ├── triggers.sql        # PostgreSQL trigger definition
-│   └── routers/
-│       ├── __init__.py
-│       ├── attendance.py   # Attendance endpoints
-│       ├── members.py      # Member endpoints
-│       ├── plans.py        # Plan endpoints
-│       └── subscriptions.py # Subscription endpoints
-├── .gitignore              # Files and folders to ignore in Git
-├── requirements.txt        # Python dependencies
-└── README.md              # This file🤝 Contributing
+📁 File Descriptions
+
+| File/Folder | Purpose |
+|-------------|---------|
+| **app/main.py** | Entry point of the application, configures FastAPI and includes routers |
+| **app/database.py** | Database connection setup and session management |
+| **app/models.py** | SQLAlchemy models defining the database schema |
+| **app/schemas.py** | Pydantic models for data validation and serialization |
+| **app/routers/** | Organized API endpoints by functionality |
+| **app/triggers.sql** | Database trigger definition for automatic check-in counting |
+| **requirements.txt** | List of Python dependencies for the project |
+| **.gitignore** | Specifies files and directories that Git should ignore |
+
+
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
