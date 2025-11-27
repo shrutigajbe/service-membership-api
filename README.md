@@ -137,6 +137,26 @@ What it does: Automatically increments the total_check_ins column in the members
 Where it's defined: app/triggers.sql.
 How it's applied: The trigger SQL is executed automatically on application startup via the startup_event in app/main.py.
 
+📁 Project Structure
+
+service-membership-api/
+├── 📂 app/                     # Main application package
+│   ├── 🐍 __init__.py
+│   ├── 🗄️ database.py          # Database session and engine configuration
+│   ├── 🚀 main.py              # FastAPI app instance and startup events
+│   ├── 📊 models.py            # SQLAlchemy ORM models (database tables)
+│   ├── ✅ schemas.py           # Pydantic models for request/response validation
+│   ├── 🔧 triggers.sql         # PostgreSQL trigger for automatic check-in counting
+│   └── 📂 routers/             # API route handlers
+│       ├── 🐍 __init__.py
+│       ├── 📅 attendance.py    # Attendance tracking endpoints
+│       ├── 👥 members.py       # Member management endpoints
+│       ├── 📋 plans.py         # Subscription plan endpoints
+│       └── 🔄 subscriptions.py # Subscription management endpoints
+├── 🚫 .gitignore               # Files and folders to ignore in Git
+├── 📦 requirements.txt         # Python dependencies
+└── 📖 README.md               # This file
+
 📁 File Descriptions
 
 | File/Folder | Purpose |
