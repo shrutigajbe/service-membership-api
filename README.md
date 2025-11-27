@@ -9,6 +9,7 @@ Service Membership API
 A robust, scalable, and modern backend API for managing service memberships. Built with FastAPI, PostgreSQL, and SQLAlchemy, this system is the perfect foundation for businesses like gyms, coaching centers, or salons to manage members, plans, subscriptions, and attendance with ease.
 
 📑 Table of Contents
+
 ✨ Features
 🛠️ Tech Stack
 🚀 Quick Start
@@ -21,6 +22,7 @@ A robust, scalable, and modern backend API for managing service memberships. Bui
 📜 License
 
 ✨ Features
+
 🔐 Secure Member Check-ins: Automatically validates against active subscriptions.
 📊 Automated Reporting: A database trigger keeps member check-in counts perfectly in sync.
 🗂️ Clean Resource Management: Full CRUD operations for members, plans, and subscriptions.
